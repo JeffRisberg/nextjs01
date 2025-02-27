@@ -1,5 +1,7 @@
 import Image from "next/image";
-import styles from "./page.module.css";
+import styles from "./pages.module.css";
+import React from "react";
+import Link from "next/link";
 
 export default function Home() {
    return (
@@ -17,8 +19,7 @@ export default function Home() {
                <li>
                   Get started by editing <code>src/app/page.tsx</code>.
                </li>
-               <li>Save and see your changes instantly.</li>
-               <li>May the force be with you.</li>
+               <li>Save and see your changes INSTANTLY.</li>
             </ol>
 
             <div className={styles.ctas}>
@@ -47,8 +48,14 @@ export default function Home() {
                </a>
 
                <p>
-                  Click on this <a href='/dashboard'><u>Link</u></a> to Go
-                  <b>/Dashboard</b> Route
+                  Click on this
+                  <Link href="/dashboard"><u>Link</u></Link>
+                  to Go <b>Dashboard</b> Route
+               </p>
+               <p>
+                  Click on this
+                  <Link href="/worksheet"><u>Link</u></Link>
+                  to Go <b>Worksheet</b> Route
                </p>
             </div>
          </main>
